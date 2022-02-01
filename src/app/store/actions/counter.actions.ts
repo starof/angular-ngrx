@@ -1,8 +1,7 @@
 import { createAction, props } from '@ngrx/store';
 
-export const loadCounters = createAction(
-  '[Counter] Load Counters'
-);
+export const increment = createAction('increment');
+export const decrement = createAction('decrement');
 
 
 
