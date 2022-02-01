@@ -15,10 +15,10 @@ export const initialState: State = {
 //创建reducer
 export const reducer = createReducer(
   initialState,
-  on(increment,(state)=>({
+  on(increment,(state,action)=>({
       ...state,
-      count:state.count+1}
+      count:state.count+action.c}
       )),
-  on(decrement,(state)=>({...state,count:state.count-1}))
+  on(decrement,(state,action)=>({...state,count:state.count-action.c}))
 
 );

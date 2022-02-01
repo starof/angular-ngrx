@@ -17,10 +17,10 @@ export class AppComponent {
     this.count=this.store.pipe(select(countSelector))
   }
   increment(){
-    this.store.dispatch(increment());
+    this.store.dispatch(increment({c:10}));
   }
 
   decrement(){
-    this.store.dispatch(decrement());
+    this.store.dispatch(decrement({c:10}));
   }
 }
