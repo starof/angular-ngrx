@@ -1,7 +1,7 @@
 import { AppState } from './store/index';
 import { counterFeatureKey, State } from './store/reducers/counter.reducer';
 import { Component } from '@angular/core';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import { increment, decrement } from './store/actions/counter.actions';
 import { Observable } from 'rxjs';
 
@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   public counter:Observable<State>;
   constructor(private store:Store<AppState>){
-    this.counter=this.store.select(counterFeatureKey)
+    this.counter=this.store.pipe(select(counterFeatureKey))
   }
   increment(){
     this.store.dispatch(increment());
