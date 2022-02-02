@@ -1,1 +1,6 @@
-<p>todo works!</p>
+<input #addTodoInput type="text">
+<ul *ngFor="let todo of todos | async">
+    <li >{{todo.title}}
+        <button (click)="deleteTodo(todo.id)">删除</button>
+    </li>
+</ul>

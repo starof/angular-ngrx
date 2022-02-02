@@ -14,7 +14,7 @@ export class TodoEffects {
   yTodos$ = createEffect(() => {
     return this.actions$.pipe( 
 
-      ofType(TodoActions.yTodos),
+      ofType(TodoActions.addTodo),
       /** An EMPTY observable only emits completion. Replace with your own observable API request */
       concatMap(() => EMPTY as Observable<{ type: string }>)
     );
