@@ -6,10 +6,13 @@ import { StoreModule } from '@ngrx/store';
 import * as fromTodo from './store/reducers/todo.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { TodoEffects } from './store/effects/todo.effects';
+import { TodoComponent } from './todo/todo.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    TodoComponent
+  ],
   imports: [
     CommonModule,
     TodoRoutingModule,
