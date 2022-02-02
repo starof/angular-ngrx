@@ -2,7 +2,7 @@ import { AppState } from './store/index';
 import { counterFeatureKey, State } from './store/reducers/counter.reducer';
 import { Component } from '@angular/core';
 import { select, Store } from '@ngrx/store';
-import { increment, decrement } from './store/actions/counter.actions';
+import { increment, decrement, async_increment } from './store/actions/counter.actions';
 import { Observable } from 'rxjs';
 import { countSelector } from './store/selectors/counter.selectors';
 
@@ -18,6 +18,9 @@ export class AppComponent {
   }
   increment(){
     this.store.dispatch(increment({c:10}));
+  }
+  asyncIncrement(){
+    this.store.dispatch(async_increment({c:100}));
   }
 
   decrement(){
