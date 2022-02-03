@@ -26,11 +26,15 @@ export class TodoComponent implements AfterViewInit {
         tap(console.log),
         map(e => (<HTMLInputElement>e.target).value),
         filter(title => title !== ""))
-      .subscribe(title=>this.store.dispatch(addTodo({title})));
+      .subscribe(title => {
+        this.store.dispatch(addTodo({ title }));
+        this.addTodoInput.nativeElement.value = "";
+      }
+      );
   }
 
   deleteTodo(id: string) {
-    this.store.dispatch(deleteTodo({id}))
+    this.store.dispatch(deleteTodo({ id }))
   }
 
 }
