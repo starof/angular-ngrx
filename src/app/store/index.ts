@@ -1,3 +1,4 @@
+import { routerReducer, RouterReducerState } from '@ngrx/router-store';
 import{
   ActionReducer,
   ActionReducerMap,
@@ -12,11 +13,13 @@ import * as fromCounter from './reducers/counter.reducer';
 export interface AppState {
 
   [fromCounter.counterFeatureKey]: fromCounter.State;
+  router: RouterReducerState
 }
 
 export const reducers: ActionReducerMap<AppState> = {
 
   [fromCounter.counterFeatureKey]: fromCounter.reducer,
+  router:routerReducer
 };
 
 
