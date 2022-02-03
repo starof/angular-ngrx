@@ -33,4 +33,4 @@ export function logAction(reducer:ActionReducer<AppState>):ActionReducer<AppStat
   }
 };
 
-export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [logAction] : [];
+export const metaReducers: MetaReducer<AppState>[] = !environment.production ? [] : [];

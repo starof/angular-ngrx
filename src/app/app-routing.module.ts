@@ -6,7 +6,10 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path:"",
-    component:HomeComponent
+    component:HomeComponent,
+    data:{ //自定义数据
+      a:"用户自定义数据a"
+    }
   },
   {
     path:'todo',
