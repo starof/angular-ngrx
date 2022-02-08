@@ -1,3 +1,4 @@
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { SubjectComponent } from './subject/subject.component';
 import { ObservableComponent } from './observable/observable.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'behavior-subject',
     component:BehaviorSubjectComponent
+  },
+  {
+    path:'replay-subject',
+    component:ReplaySubjectComponent
   }
 ];
 

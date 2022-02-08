@@ -6,6 +6,7 @@ import { QuickStartComponent } from './quick-start/quick-start.component';
 import { ObservableComponent } from './observable/observable.component';
 import { SubjectComponent } from './subject/subject.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.co
     QuickStartComponent,
     ObservableComponent,
     SubjectComponent,
-    BehaviorSubjectComponent
+    BehaviorSubjectComponent,
+    ReplaySubjectComponent
   ],
   imports: [
     CommonModule,
