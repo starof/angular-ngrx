@@ -1,3 +1,4 @@
+import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { SubjectComponent } from './subject/subject.component';
 import { ObservableComponent } from './observable/observable.component';
 import { QuickStartComponent } from './quick-start/quick-start.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'subject',
     component:SubjectComponent
+  },
+  {
+    path:'behavior-subject',
+    component:BehaviorSubjectComponent
   }
 ];
 
