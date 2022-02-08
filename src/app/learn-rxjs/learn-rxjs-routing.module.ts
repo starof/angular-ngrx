@@ -1,3 +1,4 @@
+import { SubjectComponent } from './subject/subject.component';
 import { ObservableComponent } from './observable/observable.component';
 import { QuickStartComponent } from './quick-start/quick-start.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path:'observable',
     component:ObservableComponent
+  },
+  {
+    path:'subject',
+    component:SubjectComponent
   }
 ];
 
