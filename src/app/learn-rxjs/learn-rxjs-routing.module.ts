@@ -1,3 +1,4 @@
+import { FromComponent } from './from/from.component';
 import { RangeComponent } from './range/range.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:'range',
     component:RangeComponent
+  },
+  {
+    path:'from',
+    component:FromComponent
   }
 ];
 
