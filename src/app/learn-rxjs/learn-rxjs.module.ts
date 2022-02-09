@@ -8,6 +8,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { RangeComponent } from './range/range.component';
+import { FromComponent } from './from/from.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { RangeComponent } from './range/range.component';
     SubjectComponent,
     BehaviorSubjectComponent,
     ReplaySubjectComponent,
-    RangeComponent
+    RangeComponent,
+    FromComponent
   ],
   imports: [
     CommonModule,
