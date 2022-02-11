@@ -9,6 +9,7 @@ import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.co
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { RangeComponent } from './range/range.component';
 import { FromComponent } from './from/from.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FromComponent } from './from/from.component';
     BehaviorSubjectComponent,
     ReplaySubjectComponent,
     RangeComponent,
-    FromComponent
+    FromComponent,
+    ForkJoinComponent
   ],
   imports: [
     CommonModule,

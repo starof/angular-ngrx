@@ -1,3 +1,4 @@
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromComponent } from './from/from.component';
 import { RangeComponent } from './range/range.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'from',
     component:FromComponent
+  },
+  {
+    path:'fork-join',
+    component:ForkJoinComponent
   }
 ];
 
