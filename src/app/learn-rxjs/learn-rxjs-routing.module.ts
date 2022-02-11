@@ -1,3 +1,4 @@
+import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
 import { TakeComponent } from './take/take.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { FromEventComponent } from './from-event/from-event.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path:'take',
     component:TakeComponent
+  },
+  {
+    path:'throttle',
+    component:ThrottleTimeComponent
   },
 ];
 

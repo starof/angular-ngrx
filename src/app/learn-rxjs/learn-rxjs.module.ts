@@ -13,6 +13,7 @@ import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TakeComponent } from './take/take.component';
+import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TakeComponent } from './take/take.component';
     ForkJoinComponent,
     FromEventComponent,
     SwitchMapComponent,
-    TakeComponent
+    TakeComponent,
+    ThrottleTimeComponent
   ],
   imports: [
     CommonModule,
