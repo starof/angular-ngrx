@@ -11,6 +11,7 @@ import { RangeComponent } from './range/range.component';
 import { FromComponent } from './from/from.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromEventComponent } from './from-event/from-event.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FromEventComponent } from './from-event/from-event.component';
     RangeComponent,
     FromComponent,
     ForkJoinComponent,
-    FromEventComponent
+    FromEventComponent,
+    SwitchMapComponent
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,4 @@
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromComponent } from './from/from.component';
@@ -46,7 +47,11 @@ const routes: Routes = [
   {
     path:'from-event',
     component:FromEventComponent
-  }
+  },
+  {
+    path:'switch-map',
+    component:SwitchMapComponent
+  },
 ];
 
 @NgModule({
