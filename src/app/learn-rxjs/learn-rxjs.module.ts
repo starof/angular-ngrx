@@ -10,6 +10,7 @@ import { ReplaySubjectComponent } from './replay-subject/replay-subject.componen
 import { RangeComponent } from './range/range.component';
 import { FromComponent } from './from/from.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
+import { FromEventComponent } from './from-event/from-event.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ForkJoinComponent } from './fork-join/fork-join.component';
     ReplaySubjectComponent,
     RangeComponent,
     FromComponent,
-    ForkJoinComponent
+    ForkJoinComponent,
+    FromEventComponent
   ],
   imports: [
     CommonModule,

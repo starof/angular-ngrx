@@ -1,3 +1,4 @@
+import { FromEventComponent } from './from-event/from-event.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromComponent } from './from/from.component';
 import { RangeComponent } from './range/range.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'fork-join',
     component:ForkJoinComponent
+  },
+  {
+    path:'from-event',
+    component:FromEventComponent
   }
 ];
 
