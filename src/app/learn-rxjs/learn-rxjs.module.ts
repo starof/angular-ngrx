@@ -12,6 +12,7 @@ import { FromComponent } from './from/from.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { TakeComponent } from './take/take.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
     FromComponent,
     ForkJoinComponent,
     FromEventComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    TakeComponent
   ],
   imports: [
     CommonModule,

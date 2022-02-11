@@ -1,3 +1,4 @@
+import { TakeComponent } from './take/take.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path:'switch-map',
     component:SwitchMapComponent
+  },
+  {
+    path:'take',
+    component:TakeComponent
   },
 ];
 
