@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ReducerManager } from '@ngrx/store';
-import { interval, take, Observable, range, switchMap, fromEvent } from 'rxjs';
+import { interval, switchMap, of, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-switch-map',
@@ -17,6 +16,10 @@ export class SwitchMapComponent implements OnInit, AfterViewInit {
     // interval(1000)
     //   .pipe(take(5),
     //   switchMap(e=>observable2)).subscribe(console.log)
+
+    //example 2
+    const switched = of(1, 2, 3).pipe(switchMap(x => of(x, x ** 2, x ** 3)));
+    switched.subscribe(x => console.log(x));
 
   }
 
