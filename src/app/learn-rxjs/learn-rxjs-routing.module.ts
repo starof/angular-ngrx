@@ -1,3 +1,4 @@
+import { OfDistinctUntilChangedComponent } from './of-distinct-until-changed/of-distinct-until-changed.component';
 import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
 import { TakeComponent } from './take/take.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path:'throttle',
     component:ThrottleTimeComponent
+  },
+  {
+    path:'distinctUntilChanged',
+    component:OfDistinctUntilChangedComponent
   },
 ];
 

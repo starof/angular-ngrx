@@ -14,6 +14,7 @@ import { FromEventComponent } from './from-event/from-event.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { TakeComponent } from './take/take.component';
 import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
+import { OfDistinctUntilChangedComponent } from './of-distinct-until-changed/of-distinct-until-changed.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ThrottleTimeComponent } from './throttle-time/throttle-time.component';
     FromEventComponent,
     SwitchMapComponent,
     TakeComponent,
-    ThrottleTimeComponent
+    ThrottleTimeComponent,
+    OfDistinctUntilChangedComponent
   ],
   imports: [
     CommonModule,
