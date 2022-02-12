@@ -1,4 +1,4 @@
-import { Subject, of, distinctUntilChanged } from 'rxjs';
+import { Subject, of, distinctUntilChanged, from } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,10 +14,18 @@ export class OfDistinctUntilChangedComponent implements OnInit {
 
     console.log("------");
     
-    //example 1
+    //example 2
     of(1, 1, 2, 2, 2, 1, 3).pipe(
       distinctUntilChanged()
     ).subscribe(console.log)
+
+    //example 2
+    console.log("of一个数组");
+    of([1, 1, 2, 2, 2, 1, 3]).subscribe(console.log)
+
+     //example 2
+    console.log("from一个数组");
+    from([1, 1, 2, 2, 2, 1, 3]).subscribe(console.log)
 
     //example 2
     const totallyDifferentBuilds$ = of(
